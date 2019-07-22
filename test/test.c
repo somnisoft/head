@@ -179,6 +179,26 @@ test_all_errors(void){
                  "README.md",
                  NULL);
   g_test_seam_err_ctr_putchar = -1;
+
+  /* First file does not exist. */
+  test_head_main(NULL,
+                 NULL,
+                 0,
+                 "test/files/comb-noexist-1.txt",
+                 EXIT_FAILURE,
+                 "/noexist.txt",
+                 "test/files/1.txt",
+                 NULL);
+
+  /* Second file does not exist. */
+  test_head_main(NULL,
+                 NULL,
+                 0,
+                 "test/files/comb-1-noexist.txt",
+                 EXIT_FAILURE,
+                 "test/files/1.txt",
+                 "/noexist.txt",
+                 NULL);
 }
 
 /**

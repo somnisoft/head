@@ -211,7 +211,7 @@ head_main(int argc,
       head_fp(&head, stdin);
     }
     else{
-      for(i = 0; i < argc && head.status_code == 0; i++){
+      for(i = 0; i < argc; i++){
         if(argc > 1){
           if(i > 0){
             if(putchar('\n') != '\n'){

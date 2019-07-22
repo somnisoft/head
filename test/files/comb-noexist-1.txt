@@ -1,0 +1,4 @@
+==> /noexist.txt <==
+
+==> test/files/1.txt <==
+1: line 1
